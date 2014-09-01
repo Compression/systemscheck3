@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+
+<body>
+<h2> <%= @recipes_page[0]["name"]%>
+
+<h3>Description: <%= @recipes_page[0]["description"] %> </h3>
+
+<br><br><br>
+<h3>Instructions: <%= @recipes_page[0]["instructions"] %>
+</h3>
+<br><br><br>
+<h3>Ingredients: <% @recipes_page.each do |row| %>
+  <%= row["ingredients"] %>
+  <%end%> </h3>
+</body>
+</html>
